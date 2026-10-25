@@ -51,9 +51,8 @@ things distributed publicly are the compiled loader (from the website) and the c
 
 | Component | Role |
 |---|---|
-| CarX2ModLoader | Native loader attached to the game (`winhttp.dll` proxy, .NET runtime host, IL2CPP interop, in-game menu) |
+| CarX2ModLoader | Native loader attached to the game: `winhttp.dll` proxy, .NET runtime host, IL2CPP interop, mod manager, in-game menu, server auth |
 | C2ML.Bootstrapper | Native↔managed entry point |
-| C2ML.Runtime | Mod manager, in-game UI, keybinds, config, Mod DB client, server auth |
 | C2ML.API | The public API mods are written against - shipped as a compiled DLL in the [SDK](https://github.com/l3g3nd2410/C2ML-SDK), source kept private |
 
 ## Installing (players)

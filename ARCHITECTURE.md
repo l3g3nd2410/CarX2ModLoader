@@ -22,8 +22,7 @@ only.
 
 | Component | Role | Public |
 |---|---|---|
-| CarX2ModLoader | Native loader attached to the game | ❌ closed (compiled loader downloaded from the website) |
+| CarX2ModLoader | Native loader attached to the game: mod manager, in-game UI, server auth, and everything else that makes mods run | ❌ closed (compiled loader downloaded from the website) |
 | C2ML.Bootstrapper | Native↔managed entry point | ❌ closed |
-| C2ML.Runtime | Mod manager, in-game UI, keybinds, config, Mod DB client, server auth | ❌ closed |
 | C2ML.API | Public modding API | ❌ closed (compiled DLL shipped in the [SDK](https://github.com/l3g3nd2410/C2ML-SDK)) |
 | Mod distribution, auth, encryption, Mod DB, dev panel, admin panel | [c2ml.l3g3nd.dev](https://c2ml.l3g3nd.dev) | ❌ closed |

@@ -33,7 +33,4 @@ The loader also runs its own internal self-checks at startup. How exactly those 
 
 ## Reporting a vulnerability
 
-If you find a security issue in the loader, the SDK, or [c2ml.l3g3nd.dev](https://c2ml.l3g3nd.dev) itself
-(including the mod encryption/auth model above), please report it privately rather than opening a public issue:
-**2410l3g3nd@gmail.com**. Include enough detail to reproduce it; you'll get a response before any public
-disclosure.
+Soon...

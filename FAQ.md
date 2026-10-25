@@ -20,10 +20,9 @@ By design - see [SECURITY.md](SECURITY.md). Developers testing their own mod use
 dev space instead, which stays encrypted but isn't distributed to other players.
 
 **The game updated and something broke - what do I do?**
-C2ML reconstructs the IL2CPP data it needs at runtime using pattern matching instead of hardcoded offsets (see
-[ARCHITECTURE.md](ARCHITECTURE.md)), so most routine updates keep working without a loader update. A larger
-engine or IL2CPP format change can still require one - check
-[c2ml.l3g3nd.dev](https://c2ml.l3g3nd.dev#changelog) for the latest release.
+C2ML is built to keep working across most routine game updates without needing a loader update. A larger engine
+change can still require one - check [c2ml.l3g3nd.dev](https://c2ml.l3g3nd.dev#changelog) for the latest
+release.
 
 **Where do I get mods?**
 The [Mod DB](https://c2ml.l3g3nd.dev/#mods) on the site, or a direct link from a developer for an unlisted or

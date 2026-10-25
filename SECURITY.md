@@ -28,9 +28,8 @@ described above.
 
 ## Native loader integrity checks
 
-The native loader runs structural self-checks at startup (see [ARCHITECTURE.md](ARCHITECTURE.md)): detecting a
-second instance of the .NET runtime already loaded in the process, or the presence of other known loader modules
-attaching to the same game process.
+The loader also runs its own internal self-checks at startup. How exactly those work isn't documented publicly
+(see [ARCHITECTURE.md](ARCHITECTURE.md)).
 
 ## Reporting a vulnerability
 

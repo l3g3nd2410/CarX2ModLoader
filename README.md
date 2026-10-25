@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="logo/logo.png" alt="C2ML" width="96">
+<img src=".github/logo.png" alt="C2ML" width="96">
 
 # CarX2ModLoader (C2ML)
 
@@ -27,18 +27,13 @@ players and mod developers. The compiled loader is downloaded from the website, 
 
 ## What C2ML does
 
-- Loads as a `winhttp.dll` proxy next to the game executable (no external injector, no launcher to run) and
-  forwards every real `winhttp.dll` export to the system library, so the game behaves exactly as normal.
-- Hosts the **CoreCLR** runtime directly (`coreclr.dll`, loaded and driven through the low-level
-  [CoreCLR hosting API](https://github.com/dotnet/runtime) - no `hostfxr`/`dotnet.exe` involved) and runs the
-  managed side of the loader (mod manager, UI, security checks) inside it.
-- Generates its own **IL2CPP interop assemblies** on first launch (`C2ML\cache\unity-libs\`, `C2ML\interop\`):
-  C# types shaped exactly like the game's native IL2CPP classes, so mods (and [HarmonyX](#built-with) patches)
-  can call into and patch the game like a normal managed assembly.
-- Draws an in-game menu (mod list, keybinds, per-mod config, about page) with [Dear ImGui](#built-with), hooked
-  into the game's DirectX 11/12 swap chain.
-- Reconstructs the metadata it needs from the game's own IL2CPP data at runtime using pattern/shape matching
-  instead of hardcoded offsets, so it keeps working across most routine game updates without a loader update.
+- Loads as a `winhttp.dll` proxy next to the game executable (no external injector, no launcher to run), so the
+  game runs exactly as normal otherwise.
+- Hosts a **.NET runtime** to run the mod manager, in-game UI and the mods themselves.
+- Generates **IL2CPP interop assemblies** so mods (and [HarmonyX](#built-with) patches) can call into and patch
+  the game like a normal managed assembly.
+- Draws an in-game menu (mod list, keybinds, per-mod config, about page) with [Dear ImGui](#built-with).
+- Keeps working across most routine game updates without a loader update of its own.
 
 ## Security model
 
@@ -56,9 +51,9 @@ things distributed publicly are the compiled loader (from the website) and the c
 
 | Component | Role |
 |---|---|
-| CarX2ModLoader | Native `winhttp.dll` proxy: CoreCLR hosting, IL2CPP interop generation, ImGui overlay, update/security checks |
-| C2ML.Bootstrapper | Thin native↔managed entry point invoked by the loader once CoreCLR is up |
-| C2ML.Runtime | Mod manager, in-game UI, keybinds, config, Mod DB client, security gating |
+| CarX2ModLoader | Native loader attached to the game (`winhttp.dll` proxy, .NET runtime host, IL2CPP interop, in-game menu) |
+| C2ML.Bootstrapper | Native↔managed entry point |
+| C2ML.Runtime | Mod manager, in-game UI, keybinds, config, Mod DB client, server auth |
 | C2ML.API | The public API mods are written against - shipped as a compiled DLL in the [SDK](https://github.com/l3g3nd2410/C2ML-SDK), source kept private |
 
 ## Installing (players)
@@ -79,9 +74,8 @@ a full bilingual guide set and a reference mod that uses the whole API. See
 
 ## Built with
 
-- [.NET / CoreCLR](https://github.com/dotnet/runtime) - the managed runtime hosted by the loader
+- [.NET](https://github.com/dotnet/runtime) - the managed runtime hosted by the loader
 - [Dear ImGui](https://github.com/ocornut/imgui) - the in-game menu
-- [MinHook](https://github.com/TsudaKageyu/minhook) - function hooking (render hook for the ImGui overlay)
 - [HarmonyX](https://github.com/BepInEx/HarmonyX) - bundled in the SDK for mods that patch game code (not used
   by the loader itself)
 

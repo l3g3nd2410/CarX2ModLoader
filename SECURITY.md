@@ -33,4 +33,8 @@ The loader also runs its own internal self-checks at startup. How exactly those 
 
 ## Reporting a vulnerability
 
-Soon...
+If you find a security issue in the loader, the SDK, or [c2ml.l3g3nd.dev](https://c2ml.l3g3nd.dev) itself
+(including the mod encryption/auth model above), report it privately rather than opening a public issue: sign in
+with Steam on the site and use **Report an issue** (in the [developer space](https://c2ml.l3g3nd.dev/dev), or on
+our Discord). It opens a private thread with an administrator - include enough detail to reproduce it, and
+you'll get a response before any public disclosure.

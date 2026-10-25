@@ -33,5 +33,6 @@ private mod.
 example mod), and [c2ml.l3g3nd.dev/docs](https://c2ml.l3g3nd.dev/docs) has the same guides online.
 
 **I found a bug or a security issue - how do I report it?**
-A regular bug: open an [issue](https://github.com/l3g3nd2410/CarX2ModLoader/issues) on this repository. A
-security issue: see [SECURITY.md](SECURITY.md) for a private contact instead.
+Sign in with Steam on the site and use **Report an issue** (in the
+[developer space](https://c2ml.l3g3nd.dev/dev)), or on our Discord - it opens a private thread with an
+administrator. See [SECURITY.md](SECURITY.md) for a security issue specifically.

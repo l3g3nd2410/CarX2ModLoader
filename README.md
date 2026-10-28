@@ -8,6 +8,7 @@
 [![Docs](https://img.shields.io/badge/docs-online-blue?style=flat-square)](https://c2ml.l3g3nd.dev/docs)
 [![Game](https://img.shields.io/badge/game-CarX%20Drift%20Racing%20Online%202-111111?style=flat-square)](https://store.steampowered.com/app/1826420)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d6?style=flat-square)](#installing-players)
+[![Downloads](https://img.shields.io/github/downloads/l3g3nd2410/CarX2ModLoader/total?style=flat-square&color=blue)](https://github.com/l3g3nd2410/CarX2ModLoader/releases)
 [![License](https://img.shields.io/badge/license-All%20rights%20reserved-lightgrey?style=flat-square)](#license)
 
 **[Website](https://c2ml.l3g3nd.dev) · [Docs](https://c2ml.l3g3nd.dev/docs) · [Architecture](ARCHITECTURE.md) ·

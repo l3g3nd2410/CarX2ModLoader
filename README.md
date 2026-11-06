@@ -5,7 +5,7 @@
 # CarX2ModLoader (C2ML)
 
 [![Website](https://img.shields.io/badge/website-c2ml.l3g3nd.dev-e6e600?style=flat-square)](https://c2ml.l3g3nd.dev)
-[![Discord](https://img.shields.io/discord/0?style=flat-square&logo=discord&logoColor=white&label=discord&color=5865F2&link=https%3A%2F%2Fdiscord.gg%2FghaR6PEmts)](https://discord.gg/ghaR6PEmts)
+[![Discord](https://img.shields.io/badge/discord-join-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/ghaR6PEmts)
 [![Docs](https://img.shields.io/badge/docs-online-blue?style=flat-square)](https://c2ml.l3g3nd.dev/docs)
 [![Game](https://img.shields.io/badge/game-CarX%20Drift%20Racing%20Online%202-111111?style=flat-square)](https://store.steampowered.com/app/1826420)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078d6?style=flat-square)](#installing-players)
